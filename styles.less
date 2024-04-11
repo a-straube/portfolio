@@ -1,3 +1,6 @@
+@screen-xs: 400px;
+@screen-sm: 760px;
+
 @black: #181818;
 @cream: #e1d6cc;
 @tealLight: #8db0a9;
@@ -9,14 +12,21 @@
 }  
 
 ::-webkit-scrollbar {
-    width: 22px;
+    width: 10px;
+    @media(min-width: @screen-xs) {
+        width: 22px;
+    }
 }
 ::-webkit-scrollbar-track { background: linear-gradient(180deg, rgba(225,214,204,1) 0%, rgba(218,211,201,1) 30%, rgba(141,176,169,1) 36%, rgba(145,178,171,1) 51%, rgba(225,214,204,1) 58%); }
 ::-webkit-scrollbar-thumb {
     background: transparent;
-    border-top-right-radius: 22px;
-    border-bottom-right-radius: 22px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 0px 0px 0px 100vh @black;
+    @media(min-width: @screen-xs) {
+        border-top-right-radius: 22px;
+        border-bottom-right-radius: 22px;
+    }
 }
 
 html { scroll-behavior: smooth; }
@@ -44,7 +54,10 @@ section {
     display: flex;
     align-items: center;
     position: relative;
-    padding: 0 15vw;
+    padding: 0 30px;
+    @media(min-width: @screen-xs) {
+        padding: 0 15vw;
+    }
 }
 
 h3 {
@@ -76,8 +89,11 @@ video {
 }
 
 h1 {
-    font-size: 408px;
+    font-size: 130px;
     display: block;
+    @media(min-width: @screen-xs) {
+        font-size: 408px;
+    }
     >span {
         background-color: @cream;
         color: black;
@@ -89,12 +105,14 @@ h1 {
     border: 5px solid #403828;
     border-radius: 10px;
     filter: drop-shadow(5px 4px 7px rgba(0,0,0,0.75));
-    height: 54vh;
-    width: 28vw;
+    height: auto; width: 50vw;
     position: absolute;
     top: 122vh;
     right: 24vw;
     transform: translateZ(7px) scale(0.4) rotateY(-0.1deg);
+    @media(min-width: @screen-sm) {
+        height: 54vh; width: auto;
+    }
 }
 
 #section3 {
