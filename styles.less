@@ -1,5 +1,6 @@
 @screen-xs: 400px;
 @screen-sm: 760px;
+@screen-md: 1000px;
 
 @black: #181818;
 @cream: #e1d6cc;
@@ -85,13 +86,20 @@ video {
 #topText {
     transform: translateZ(-20px);
     position: absolute;
-    top: -50vh;
+        top: -50vh;
+        left: -54vw;
+    @media(min-width: @screen-xs) {
+        left: -32vw;
+    }
 }
 
 h1 {
     font-size: 130px;
     display: block;
     @media(min-width: @screen-xs) {
+        font-size: 168px;
+    }
+    @media(min-width: @screen-md) {
         font-size: 408px;
     }
     >span {

@@ -83,12 +83,23 @@ video {
   transform: translateZ(-20px);
   position: absolute;
   top: -50vh;
+  left: -54vw;
+}
+@media (min-width: 400px) {
+  #topText {
+    left: -32vw;
+  }
 }
 h1 {
   font-size: 130px;
   display: block;
 }
 @media (min-width: 400px) {
+  h1 {
+    font-size: 168px;
+  }
+}
+@media (min-width: 1000px) {
   h1 {
     font-size: 408px;
   }
