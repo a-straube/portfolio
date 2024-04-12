@@ -110,16 +110,27 @@ h1 {
 }
 
 #axelPic {
-    border: 5px solid #403828;
-    border-radius: 10px;
-    filter: drop-shadow(5px 4px 7px rgba(0,0,0,0.75));
-    height: auto; width: 50vw;
-    position: absolute;
-    top: 122vh;
-    right: 24vw;
-    transform: translateZ(7px) scale(0.4) rotateY(-0.1deg);
+    height: auto; width: 100vw;
+    margin-left: -2vw;
     @media(min-width: @screen-sm) {
-        height: 54vh; width: auto;
+        border: 5px solid #403828;
+        border-radius: 10px;
+        filter: drop-shadow(5px 4px 7px rgba(0,0,0,0.75));
+        margin: 0;
+        position: absolute; top: 122vh; right: 10vw;
+        transform: translateZ(7px) scale(0.4) rotateY(-0.1deg);
+        height: 30vh; width: auto;
+    }
+    @media(min-width: @screen-md) {
+        height: 46vh;
+        right: 12vw;
+    }
+    @media(min-width: 1400px) {
+        height: 54vh;
+        right: 14vw;
+    }
+    @media(min-width: 1800px) {
+        right: 20vw;
     }
 }
 
