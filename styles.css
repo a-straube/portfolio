@@ -37,6 +37,9 @@ html {
   height: 100%;
   margin: 0;
 }
+ul {
+  padding-left: 20px;
+}
 #main {
   border-right: 5px solid #181818;
   height: 100vh;
@@ -54,14 +57,15 @@ section {
   height: 100vh;
   justify-content: center;
   position: relative;
-  padding: 0 30px;
+  padding: 30px;
 }
 @media (min-width: 400px) {
   section {
-    padding: 0 15vw;
+    padding: 5vh 15vw;
   }
 }
 h3 {
+  margin: 0 0 10px;
   text-transform: uppercase;
 }
 #overlaySection {
@@ -70,6 +74,7 @@ h3 {
 }
 #aboutMeSection {
   background-color: #e1d6cc;
+  z-index: 1;
 }
 video {
   object-fit: cover;
@@ -84,6 +89,7 @@ video {
   position: absolute;
   top: -50vh;
   left: -54vw;
+  z-index: 0;
 }
 @media (min-width: 400px) {
   #topText {
@@ -93,6 +99,7 @@ video {
 h1 {
   font-size: 130px;
   display: block;
+  margin: 0;
 }
 @media (min-width: 400px) {
   h1 {
@@ -109,10 +116,14 @@ h1 > span {
   color: black;
   text-transform: lowercase;
 }
+h2 {
+  margin: 0;
+}
 #axelPic {
   height: auto;
   width: 100vw;
   margin-left: -2vw;
+  z-index: 2;
 }
 @media (min-width: 760px) {
   #axelPic {
@@ -121,7 +132,7 @@ h1 > span {
     filter: drop-shadow(5px 4px 7px rgba(0, 0, 0, 0.75));
     margin: 0;
     position: absolute;
-    top: 122vh;
+    top: 134vh;
     right: 10vw;
     transform: translateZ(7px) scale(0.4) rotateY(-0.1deg);
     height: 30vh;
