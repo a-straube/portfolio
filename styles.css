@@ -61,6 +61,11 @@ section {
 }
 @media (min-width: 400px) {
   section {
+    padding: 5vh 10vw;
+  }
+}
+@media (min-width: 1000px) {
+  section {
     padding: 5vh 15vw;
   }
 }
@@ -74,7 +79,21 @@ h3 {
 }
 #aboutMeSection {
   background-color: #e1d6cc;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
   z-index: 1;
+}
+@media (min-width: 1500px) {
+  #aboutMeSection p,
+  #aboutMeSection ul {
+    padding-right: 34vw;
+  }
+}
+@media (min-width: 1650px) {
+  #aboutMeSection p,
+  #aboutMeSection ul {
+    padding-right: 32vw;
+  }
 }
 video {
   object-fit: cover;
