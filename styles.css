@@ -104,15 +104,24 @@ video {
   width: 100%;
 }
 #topText {
-  transform: translateZ(-20px);
+  display: flex;
+  flex-flow: column wrap;
   position: absolute;
-  top: -50vh;
+  top: 0;
   left: -54vw;
+  transform: translateZ(-20px);
   z-index: 0;
 }
 @media (min-width: 400px) {
   #topText {
     left: -32vw;
+  }
+}
+@media (min-width: 760px) {
+  #topText {
+    align-items: flex-end;
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
 }
 h1 {
@@ -136,7 +145,20 @@ h1 > span {
   text-transform: lowercase;
 }
 h2 {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid black;
+  font-size: 50px;
+  font-weight: 100;
   margin: 0;
+  padding: 5vw;
+  position: relative;
+  text-transform: lowercase;
+}
+@media (min-width: 760px) {
+  h2 {
+    font-size: 100px;
+    right: -10vw;
+  }
 }
 #axelPic {
   height: auto;

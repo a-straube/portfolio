@@ -101,11 +101,17 @@ video {
 }
 
 #topText {
+    display: flex; flex-flow: column wrap;
+    position: absolute; top: 0; left: -54vw;
     transform: translateZ(-20px);
-    position: absolute; top: -50vh; left: -54vw;
     z-index: 0;
     @media(min-width: @screen-xs) {
         left: -32vw;
+    }
+    @media(min-width: @screen-sm) {
+        align-items: flex-end;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
 
@@ -127,7 +133,18 @@ h1 {
 }
 
 h2 {
+    background-color: rgba(255,255,255,0.15);
+    border: 1px solid black;
+    font-size: 50px;
+    font-weight: 100;
     margin: 0;
+    padding: 5vw;
+    position: relative;
+    text-transform: lowercase;
+    @media(min-width: @screen-sm) {
+        font-size: 100px;
+        right: -10vw;
+    }
 }
 
 #axelPic {
