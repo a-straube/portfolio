@@ -210,6 +210,42 @@ h2 {
   background-color: #e1d6cc;
   height: auto;
 }
+#connectSectionText {
+  position: relative;
+}
+#connectSectionText > span {
+  display: block;
+}
+#connectSectionText > span:first-child {
+  padding-bottom: 30px;
+  width: 66%;
+}
+#connectList {
+  display: flex;
+  font-size: 60px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 67%;
+}
+#connectList > li {
+  display: inline-block;
+  padding: 0 10px;
+}
+#connectList a {
+  color: #8db0a9;
+  filter: drop-shadow(1px 1px 1px #181818);
+  padding: 10px;
+  position: relative;
+  top: 1px;
+  transition: all 0.1s ease-in-out;
+}
+#connectList a:hover,
+#connectList a:focus,
+#connectList a:active {
+  filter: drop-shadow(1px 1px 2px #181818);
+  top: -3px;
+}
 #credits {
   color: #e1d6cc;
   height: auto;
