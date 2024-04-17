@@ -246,6 +246,10 @@ h2 {
   color: #9cbab4;
   top: -3px;
 }
+#axelWriting {
+  margin-left: 50%;
+  max-width: 280px;
+}
 #credits {
   color: #e1d6cc;
   height: auto;
