@@ -74,8 +74,10 @@ h3 {
   text-transform: uppercase;
 }
 #overlaySection {
-  color: white;
+  align-items: center;
   background-color: rgba(174, 223, 219, 0.8);
+  color: white;
+  flex-direction: row;
 }
 #aboutMeSection {
   background-color: #e1d6cc;
@@ -150,19 +152,22 @@ h1 > span {
   text-transform: lowercase;
 }
 h2 {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(5, 5, 5, 0.3);
   border: 1px solid black;
   font-size: 50px;
   font-weight: 100;
   margin: 0;
-  padding: 5vw;
+  padding: 4vw;
   position: relative;
   text-transform: lowercase;
 }
 @media (min-width: 760px) {
   h2 {
-    font-size: 100px;
-    right: -10vw;
+    font-size: 4vw;
+    max-width: 25vw;
+    position: absolute;
+    top: 22vh;
+    right: 0;
   }
 }
 #axelPic {

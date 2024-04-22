@@ -73,8 +73,10 @@ h3 {
 }
 
 #overlaySection {
-    color: white;
+    align-items: center;
     background-color: rgb(174 223 219 / 80%);
+    color: white;
+    flex-direction: row;
 }
 
 #aboutMeSection {
@@ -137,17 +139,18 @@ h1 {
 }
 
 h2 {
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(5,5,5,0.3);
     border: 1px solid black;
     font-size: 50px;
     font-weight: 100;
     margin: 0;
-    padding: 5vw;
+    padding: 4vw;
     position: relative;
     text-transform: lowercase;
     @media(min-width: @screen-sm) {
-        font-size: 100px;
-        right: -10vw;
+        font-size: 4vw;
+        max-width: 25vw;
+        position: absolute; top: 22vh; right: 0;
     }
 }
 
