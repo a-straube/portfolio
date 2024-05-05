@@ -185,6 +185,20 @@ h2 {
     background-position: center 68%;
 }
 
+.project-link {
+    &:hover, &:focus, &:active {
+        >.project-link-img {
+            filter: brightness(1);
+        }
+    }
+}
+
+.project-link-img {
+    filter: brightness(0.92);
+    max-width: 400px;
+    transition: all 0.2s ease-in-out;
+}
+
 #connectSection {
     background-color: @cream;
     height: auto;
