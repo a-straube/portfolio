@@ -216,9 +216,13 @@ h2 {
 .project-link:active > .project-link-img {
   filter: brightness(1);
 }
+.project-link {
+  display: flex;
+  flex-direction: column;
+}
 .project-link-img {
   filter: brightness(0.92);
-  max-width: 400px;
+  max-width: 300px;
   transition: all 0.2s ease-in-out;
 }
 #connectSection {
