@@ -211,6 +211,11 @@ h2 {
   background-image: url('img/pexels-ylanite-koppens-1445416.jpg');
   background-position: center 68%;
 }
+.project-group:hover > .project-link,
+.project-group:focus > .project-link,
+.project-group:active > .project-link {
+  display: flex;
+}
 #demosTitle {
   color: #ff7f50;
   position: relative;
@@ -235,13 +240,16 @@ h2 {
   top: -94px;
   transform: rotate(45deg);
 }
+.project-link {
+  display: none;
+  position: absolute;
+}
 .project-link:hover > .project-link-img,
 .project-link:focus > .project-link-img,
 .project-link:active > .project-link-img {
   filter: brightness(1);
 }
 .project-link {
-  display: flex;
   flex-direction: column;
 }
 .project-link-img {

@@ -185,6 +185,14 @@ h2 {
     background-position: center 68%;
 }
 
+.project-group {
+    &:hover, &:focus, &:active {
+        >.project-link {
+            display: flex;
+        }
+    }
+}
+
 #demosTitle {
     color: #ff7f50;
     position: relative;
@@ -205,6 +213,8 @@ h2 {
 }
 
 .project-link {
+    display: none;
+    position: absolute;
     &:hover, &:focus, &:active {
         >.project-link-img {
             filter: brightness(1);
@@ -213,7 +223,7 @@ h2 {
 }
 
 .project-link {
-    display: flex; flex-direction: column;
+    flex-direction: column;
 }
 
 .project-link-img {
