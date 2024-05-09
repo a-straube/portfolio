@@ -183,7 +183,7 @@ h2 {
     filter: drop-shadow(5px 4px 7px rgba(0, 0, 0, 0.75));
     margin: 0;
     position: absolute;
-    top: 134vh;
+    top: 136vh;
     right: 10vw;
     transform: translateZ(7px) scale(0.4) rotateY(-0.1deg);
     height: 30vh;
@@ -192,13 +192,12 @@ h2 {
 }
 @media (min-width: 1000px) {
   #axelPic {
-    height: 46vh;
+    height: 45vh;
     right: 12vw;
   }
 }
 @media (min-width: 1400px) {
   #axelPic {
-    height: 54vh;
     right: 14vw;
   }
 }
