@@ -111,12 +111,12 @@ video {
   position: absolute;
   top: 29vh;
   left: -54vw;
-  transform: translateZ(-20px);
+  transform: translateZ(-40px);
   z-index: 0;
 }
 @media (min-width: 400px) {
   #topText {
-    left: -7vw;
+    left: -25vw;
   }
 }
 @media (min-width: 760px) {
@@ -147,7 +147,7 @@ h1 {
 }
 @media (min-width: 1400px) {
   h1 {
-    font-size: 408px;
+    font-size: 30vw;
   }
 }
 h1 > span {
@@ -162,19 +162,19 @@ h1 > span:first-child {
 }
 h1 > span:last-child {
   animation-name: showName;
-  animation-duration: 32s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 h1 > span:last-child > span {
   animation-name: showName;
-  animation-duration: 33s;
+  animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 h1 > span:last-child > span > span {
   animation-name: showName;
-  animation-duration: 40s;
+  animation-duration: 42s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }

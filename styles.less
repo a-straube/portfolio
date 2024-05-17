@@ -109,10 +109,10 @@ video {
 #topText {
     display: flex; flex-flow: column wrap;
     position: absolute; top: 29vh; left: -54vw;
-    transform: translateZ(-20px);
+    transform: translateZ(-40px);
     z-index: 0;
     @media(min-width: @screen-xs) {
-        left: -7vw;
+        left: -25vw;
     }
     @media(min-width: @screen-sm) {
         align-items: flex-end;
@@ -135,9 +135,7 @@ h1 {
     @media(min-width: @screen-md) {
         font-size: 246px;
     }
-    @media(min-width: @screen-lg) {
-        font-size: 408px;
-    }
+    @media(min-width: @screen-lg) { font-size: 30vw; }
     >span {
         display: block;
         &:first-child {
@@ -149,17 +147,17 @@ h1 {
         }
         &:last-child {
             animation-name: showName;
-            animation-duration: 32s;
+            animation-duration: 30s;
             animation-timing-function: linear;
             animation-iteration-count: 1;
             >span {
                 animation-name: showName;
-                animation-duration: 33s;
+                animation-duration: 40s;
                 animation-timing-function: linear;
                 animation-iteration-count: 1;
                 >span {
                     animation-name: showName;
-                    animation-duration: 40s;
+                    animation-duration: 42s;
                     animation-timing-function: linear;
                     animation-iteration-count: 1;
                 }
