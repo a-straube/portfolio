@@ -127,6 +127,10 @@ video {
   }
 }
 h1 {
+  animation-name: showName;
+  animation-duration: 22s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
   color: #dadcde;
   font-size: 130px;
   display: block;
