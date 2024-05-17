@@ -122,10 +122,6 @@ video {
 }
 
 h1 {
-    animation-name: showName;
-    animation-duration: 22s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
     color: #dadcde;
     font-size: 130px;
     display: block;
@@ -144,7 +140,29 @@ h1 {
     >span {
         display: block;
         &:first-child {
+            animation-name: showName;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
             padding-left: 5%;
+        }
+        &:last-child {
+            animation-name: showName;
+            animation-duration: 32s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            >span {
+                animation-name: showName;
+                animation-duration: 33s;
+                animation-timing-function: linear;
+                animation-iteration-count: 1;
+                >span {
+                    animation-name: showName;
+                    animation-duration: 40s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                }
+            }
         }
     }
 }
