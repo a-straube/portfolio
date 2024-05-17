@@ -74,12 +74,21 @@ h3 {
     text-transform: uppercase;
 }
 
-#overlaySection {
+#intro {
     align-items: center;
-    // backdrop-filter: invert(1);
-    // background-color: rgb(174 223 219 / 40%);
-    color: white;
     flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+#h2Cover {
+    animation: introNameBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
+    background: #3d9dba;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 0%;
+    z-index: 2;
 }
 
 #aboutMeSection {
@@ -166,20 +175,24 @@ h1 {
     }
 }
 
+#title {
+    // background-color: rgba(5,5,5,0.3);
+    position: relative;
+    @media(min-width: @screen-sm) {
+        top: -17vh;
+        right: 0;
+    }
+}
+
 h2 {
-    background-color: rgba(5,5,5,0.3);
-    border: 1px solid black;
+    animation: showName 3s forwards;
+    border: 1px solid @black;
     font-size: 50px;
     font-weight: 100;
     margin: 0;
     padding: 4vw;
-    position: relative;
     text-transform: lowercase;
-    @media(min-width: @screen-sm) {
-        font-size: 4vw;
-        max-width: 25vw;
-        position: absolute; top: 22vh; right: 0;
-    }
+    @media(min-width: @screen-sm) { font-size: 2vw; }
 }
 
 #axelPic {
