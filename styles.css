@@ -76,7 +76,6 @@ h3 {
 }
 #overlaySection {
   align-items: center;
-  background-color: rgba(174, 223, 219, 0.4);
   color: white;
   flex-direction: row;
 }
@@ -117,7 +116,7 @@ video {
 }
 @media (min-width: 400px) {
   #topText {
-    left: -32vw;
+    left: -7vw;
   }
 }
 @media (min-width: 760px) {
@@ -128,6 +127,7 @@ video {
   }
 }
 h1 {
+  color: #dadcde;
   font-size: 130px;
   display: block;
   margin: 0;
@@ -148,8 +148,6 @@ h1 {
   }
 }
 h1 > span {
-  background-color: #e1d6cc;
-  color: black;
   text-transform: lowercase;
 }
 h2 {
