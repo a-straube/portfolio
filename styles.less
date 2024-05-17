@@ -108,7 +108,7 @@ video {
 
 #topText {
     display: flex; flex-flow: column wrap;
-    position: absolute; top: 0; left: -54vw;
+    position: absolute; top: 29vh; left: -54vw;
     transform: translateZ(-20px);
     z-index: 0;
     @media(min-width: @screen-xs) {
@@ -129,7 +129,9 @@ h1 {
     color: #dadcde;
     font-size: 130px;
     display: block;
+    line-height: 0.8;
     margin: 0;
+    text-transform: lowercase;
     @media(min-width: @screen-xs) {
         font-size: 168px;
     }
@@ -140,7 +142,10 @@ h1 {
         font-size: 408px;
     }
     >span {
-        text-transform: lowercase;
+        display: block;
+        &:first-child {
+            padding-left: 5%;
+        }
     }
 }
 
