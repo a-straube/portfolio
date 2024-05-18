@@ -17,9 +17,7 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-    @media(min-width: @screen-xs) {
-        width: 22px;
-    }
+    @media(min-width: @screen-xs) { width: 22px; }
 }
 ::-webkit-scrollbar-track { background: linear-gradient(180deg, rgba(225,214,204,1) 0%, rgba(218,211,201,1) 30%, rgba(141,176,169,1) 36%, rgba(145,178,171,1) 51%, rgba(225,214,204,1) 58%); }
 ::-webkit-scrollbar-thumb {
@@ -61,12 +59,8 @@ section {
     justify-content: center;
     position: relative;
     padding: 30px;
-    @media(min-width: @screen-xs) {
-        padding: 5vh 10vw;
-    }
-    @media(min-width: @screen-md) {
-        padding: 5vh 15vw;
-    }
+    @media(min-width: @screen-xs) { padding: 5vh 10vw; }
+    @media(min-width: @screen-md) { padding: 5vh 15vw; }
 }
 
 h3 {
@@ -97,12 +91,8 @@ h3 {
     border-bottom: 1px solid @black;
     z-index: 1;
     p, ul {
-        @media(min-width: 1500px) {
-            padding-right: 34vw;
-        }
-        @media(min-width: 1650px) {
-            padding-right: 32vw;
-        }
+        @media(min-width: 1500px) { padding-right: 34vw; }
+        @media(min-width: 1650px) { padding-right: 32vw; }
     }
 }
 
@@ -120,9 +110,7 @@ video {
     position: absolute; top: 29vh; left: -54vw;
     transform: translateZ(-40px);
     z-index: 0;
-    @media(min-width: @screen-xs) {
-        left: -25vw;
-    }
+    @media(min-width: @screen-xs) { left: -25vw; }
     @media(min-width: @screen-sm) {
         align-items: flex-end;
         flex-flow: row nowrap;
@@ -138,12 +126,8 @@ h1 {
     line-height: 0.8;
     margin: 0;
     text-transform: lowercase;
-    @media(min-width: @screen-xs) {
-        font-size: 168px;
-    }
-    @media(min-width: @screen-md) {
-        font-size: 246px;
-    }
+    @media(min-width: @screen-xs) { font-size: 168px; }
+    @media(min-width: @screen-md) { font-size: 246px; }
     @media(min-width: @screen-lg) { font-size: 30vw; }
     >span {
         display: block;
@@ -176,7 +160,6 @@ h1 {
 }
 
 #title {
-    // background-color: rgba(5,5,5,0.3);
     position: relative;
     @media(min-width: @screen-sm) {
         top: -17vh;
@@ -216,10 +199,7 @@ h2 {
     @media(min-width: 1800px) { right: 20vw; }
 }
 
-#projectsSection {
-    background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg');
-    background-position: center 68%;
-}
+#projectsSection { background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg'); }
 
 .project-group {
     position: absolute;
@@ -280,9 +260,7 @@ h2 {
     }
 }
 
-.project-link {
-    flex-direction: column;
-}
+.project-link { flex-direction: column; }
 
 .project-link-img {
     filter: brightness(0.92);
