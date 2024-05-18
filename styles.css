@@ -372,6 +372,7 @@ h2 {
   max-width: 280px;
 }
 #credits {
-  color: #e1d6cc;
+  background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg');
+  color: #181818;
   height: auto;
 }
