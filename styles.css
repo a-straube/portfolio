@@ -165,26 +165,26 @@ h1 > span {
 }
 h1 > span:first-child {
   animation-name: showName;
-  animation-duration: 20s;
+  animation-duration: 16s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
   padding-left: 5%;
 }
 h1 > span:last-child {
   animation-name: showName;
-  animation-duration: 30s;
+  animation-duration: 26s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 h1 > span:last-child > span {
   animation-name: showName;
-  animation-duration: 40s;
+  animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
 h1 > span:last-child > span > span {
   animation-name: showName;
-  animation-duration: 42s;
+  animation-duration: 32s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 }
