@@ -82,6 +82,7 @@ h3 {
 }
 #h2Cover {
   animation: introNameBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 18s;
   background: #3d9dba;
   display: flex;
   height: 100%;
@@ -199,10 +200,14 @@ h1 > span:last-child > span > span {
 }
 h2 {
   animation: showName 3s forwards;
-  border: 1px solid #181818;
+  animation-delay: 18s;
+  border-top: 1px solid #181818;
+  border-bottom: 1px solid #181818;
+  border-left: 1px solid #181818;
   font-size: 50px;
   font-weight: 100;
   margin: 0;
+  opacity: 0;
   padding: 4vw;
   text-transform: lowercase;
 }
