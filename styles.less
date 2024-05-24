@@ -7,6 +7,7 @@
 
 @black: #181818;
 @cream: #e1d6cc;
+@offWhite: #f1ede9;
 @tealLight: #8db0a9;
 
 .cutive-mono-regular {
@@ -275,7 +276,14 @@ h2 {
     }
 }
 
-.project-link { flex-direction: column; }
+.project-link {
+    flex-direction: column;
+    z-index: 1;
+    >span {
+        background-color: @offWhite;
+        padding: 5px;
+    }
+}
 
 .project-link-img {
     filter: brightness(0.92);
