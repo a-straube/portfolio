@@ -234,7 +234,8 @@ h2 {
     &:hover, &:focus, &:active {
         &:before { transform: rotate(50deg); }
         >.project-link {
-            display: flex;
+            opacity: 1;
+            transform: scale(1);
         }
     }
 }
@@ -267,21 +268,20 @@ h2 {
 }
 
 .project-link {
-    display: none;
+    display: flex; flex-direction: column;
+    opacity: 0;
     position: absolute;
-    &:hover, &:focus, &:active {
-        >.project-link-img {
-            filter: brightness(1);
-        }
-    }
-}
-
-.project-link {
-    flex-direction: column;
+    transition: all 0.75s ease-in-out;
+    transform: scale(0.1);
     z-index: 1;
     >span {
         background-color: @offWhite;
         padding: 5px;
+    }
+    &:hover, &:focus, &:active {
+        >.project-link-img {
+            filter: brightness(1);
+        }
     }
 }
 
