@@ -216,24 +216,33 @@ h2 {
 .project-group {
     position: absolute;
     transition: all 2s ease-in-out;
+    h4 {
+        color: @black;
+        font-size: 20px;
+        letter-spacing: 1px;
+        position: relative;
+        text-transform: uppercase;
+    }
     &:before {
         content: '';
         background: rgba(255,255,255,0.6);
-        border: 1px solid #ff7f50;
+        border: 2px solid #ff7f50;
         height: 200px; width: 200px;
         position: absolute; left: -84px; top: -94px;
-        transition: all .5s ease-in-out;
         transform: rotate(65deg);
+        transition: all .5s ease-in-out;
     }
     &:after {
         content: '';
-        border: 1px solid #000000;
+        border: 2px solid #000000;
         height: 200px; width: 200px;
         position: absolute; left: -84px; top: -94px;
         transform: rotate(45deg);
+        transition: all .5s ease-in-out;
     }
     &:hover, &:focus, &:active {
         &:before { transform: rotate(50deg); }
+        &:after { transform: rotate(85deg); }
         >.project-link {
             opacity: 1;
             transform: scale(1);
@@ -241,31 +250,23 @@ h2 {
     }
 }
 
-#projects-Archives { top: 62vh; right: 15vw; }
-
-#archivesTitle {
-    color: #ff7f50;
-    position: relative;
+#projects-Archives {
+    top: 62vh; right: 15vw;
     &:before {
-        content: '';
-        border: 1px solid @black;
         border-radius: 50%;
-        height: 200px; width: 200px;
-        position: absolute; left: -100px; top: -100px;
     }
     &:after {
-        content: '';
-        border: 1px solid #ff7f50;
         border-radius: 50%;
-        height: 180px; width: 180px;
-        position: absolute; left: -80px; top: -80px;
+        height: 260px; width: 260px;
     }
-}
-
-#demosTitle {
-    color: @black;
-    font-size: 20px;
-    position: relative;
+    &:hover, &:focus, &:active {
+        &:before {
+            height: 280px; width: 280px;
+        }
+        &:after {
+            height: 220px; width: 220px;
+        }
+    }
 }
 
 .project-link {
