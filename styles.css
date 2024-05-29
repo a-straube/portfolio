@@ -308,6 +308,7 @@ h2 {
 .project-group:focus > .project-link,
 .project-group:active > .project-link {
   opacity: 1;
+  pointer-events: auto;
   transform: scale(1);
 }
 #projects-Archives {
@@ -343,6 +344,7 @@ h2 {
   font-weight: 700;
   opacity: 0;
   padding: 8px;
+  pointer-events: none;
   position: absolute;
   text-align: center;
   text-decoration: none;
@@ -352,6 +354,10 @@ h2 {
 }
 .project-link > span {
   padding: 12px 0 6px;
+}
+.project-link--old-portfolio {
+  top: -23vh;
+  left: 100px;
 }
 .project-link:hover,
 .project-link:focus,
