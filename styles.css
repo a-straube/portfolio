@@ -85,6 +85,7 @@ h3 {
   animation: introNameBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   animation-delay: 12s;
   background: #f4aa22;
+  background: url('img/pexels-paduret-4049613.png') no-repeat;
   display: flex;
   height: 100%;
   position: absolute;
@@ -212,20 +213,27 @@ h1 > span > span {
 h2 {
   animation: showName 3s forwards;
   animation-delay: 12s;
-  border-top: 1px solid #181818;
-  border-bottom: 1px solid #181818;
-  border-left: 1px solid #181818;
   font-size: 6vw;
   font-weight: 100;
   margin: 0;
   opacity: 0;
   padding: 6vh 6vw 6vh 4vw;
+  position: relative;
   text-transform: lowercase;
 }
 @media (min-width: 760px) {
   h2 {
     font-size: 2vw;
   }
+}
+h2:after {
+  content: '';
+  background-color: #181818;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 3vh;
+  left: 2vw;
 }
 #axelPic {
   height: auto;
