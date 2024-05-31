@@ -148,15 +148,10 @@ h1 {
 }
 @media (min-width: 400px) {
   h1 {
-    font-size: 168px;
+    font-size: 180px;
   }
 }
-@media (min-width: 1000px) {
-  h1 {
-    font-size: 246px;
-  }
-}
-@media (min-width: 1400px) {
+@media (min-width: 760px) {
   h1 {
     font-size: 30vw;
   }
