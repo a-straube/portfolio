@@ -79,7 +79,7 @@ h3 {
 
 #h2Cover {
     animation: introNameBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-    animation-delay: 18s;
+    animation-delay: 12s;
     background: #f4aa22;
     display: flex;
     height: 100%;
@@ -133,33 +133,30 @@ h1 {
     @media(min-width: @screen-md) { font-size: 246px; }
     @media(min-width: @screen-lg) { font-size: 30vw; }
     >span {
-        display: block;
-        &:first-child {
-            animation-name: showName;
-            animation-duration: 16s;
-            animation-timing-function: linear;
-            animation-iteration-count: 1;
-            padding-left: 5%;
-        }
-        &:last-child {
-            animation-name: showName;
-            animation-duration: 26s;
-            animation-timing-function: linear;
-            animation-iteration-count: 1;
-            >span {
-                animation-name: showName;
-                animation-duration: 30s;
-                animation-timing-function: linear;
-                animation-iteration-count: 1;
-                >span {
-                    animation-name: showName;
-                    animation-duration: 32s;
-                    animation-timing-function: linear;
-                    animation-iteration-count: 1;
-                }
-            }
+        display: flex;
+        &:first-child { padding-left: 5%; }
+        >span {
+            animation: showName 10s forwards;
+            opacity: 0;
         }
     }
+}
+
+#firstName >span {
+    &:nth-child(1) { animation-delay: 0.5s;}    
+    &:nth-child(2) { animation-delay: 1.5s;}
+    &:nth-child(3) { animation-delay: 2s;}
+    &:nth-child(4) { animation-delay: 4s;}
+}
+
+#lastName >span {
+    &:nth-child(1) { animation-delay: 4.5s;}
+    &:nth-child(2) { animation-delay: 5s;}
+    &:nth-child(3) { animation-delay: 5s;}
+    &:nth-child(4) { animation-delay: 5.5s;}
+    &:nth-child(5) { animation-delay: 6s;}
+    &:nth-child(6) { animation-delay: 6s;}
+    &:nth-child(7) { animation-delay: 6.5s;}
 }
 
 #title {
@@ -172,7 +169,7 @@ h1 {
 
 h2 {
     animation: showName 3s forwards;
-    animation-delay: 18s;
+    animation-delay: 12s;
     border-top: 1px solid @black;
     border-bottom: 1px solid @black;
     border-left: 1px solid @black;
