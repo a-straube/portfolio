@@ -217,7 +217,7 @@ h2 {
   font-weight: 100;
   margin: 0;
   opacity: 0;
-  padding: 6vh 6vw 6vh 4vw;
+  padding: 6vh 3vw 6vh 4vw;
   position: relative;
   text-transform: lowercase;
 }
@@ -228,7 +228,7 @@ h2 {
 }
 h2:after {
   content: '';
-  background-color: #181818;
+  background-color: rgba(24, 24, 24, 0.5);
   height: 1px;
   width: 100%;
   position: absolute;
