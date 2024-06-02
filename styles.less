@@ -8,7 +8,6 @@
 @black: #181818;
 @cream: #e1d6cc;
 @offWhite: #f1ede9;
-@tealLight: #8db0a9;
 
 .cutive-mono-regular {
     font-family: "Cutive Mono", monospace;
@@ -311,40 +310,29 @@ h2 {
 }
 
 #connectSectionText {
-    position: relative;
-    >span {
-        display: block;
-        &:first-child {
-            padding-bottom: 30px;
-            width: 66%;
-        }
-    }
-}
-
-#connectList {
-    display: flex;
-    font-size: 60px;
-    margin: 0;
-    position: absolute; top: 0; left: 67%;
-    >li {
-        display: inline-block;
-        padding: 0 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    span {
+        @media(max-width: @screen-md) { display: block; }
     }
     a {
-        color: @tealLight;
-        filter: drop-shadow(1px 1px 1px @black);
-        padding: 10px;
+        color: #278abd;
+        display: inline-block;
+        filter: drop-shadow(1px 1px rgb(24 24 24 / 50%));
+        font-size: 30px;
+        margin: 0 5px;
         position: relative; top: 1px;
-        transition: all .15s ease-in-out;
+        transition: all .2s ease-in-out;
         &:hover, &:focus, &:active {
-            color: lighten(@tealLight, 5%);
+            color: lighten(#278abd, 5%);
             top: -3px;
         }
     }
 }
 
 #axelWriting {
-    margin-left: 50%;
+    margin-left: auto;
+    margin-right: 10px;
     max-width: 280px;
 }
 

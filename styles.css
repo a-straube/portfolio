@@ -397,43 +397,33 @@ h2:after {
   height: auto;
 }
 #connectSectionText {
-  position: relative;
+  font-size: 18px;
+  line-height: 1.5;
 }
-#connectSectionText > span {
-  display: block;
+@media (max-width: 1000px) {
+  #connectSectionText span {
+    display: block;
+  }
 }
-#connectSectionText > span:first-child {
-  padding-bottom: 30px;
-  width: 66%;
-}
-#connectList {
-  display: flex;
-  font-size: 60px;
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 67%;
-}
-#connectList > li {
+#connectSectionText a {
+  color: #278abd;
   display: inline-block;
-  padding: 0 10px;
-}
-#connectList a {
-  color: #8db0a9;
-  filter: drop-shadow(1px 1px 1px #181818);
-  padding: 10px;
+  filter: drop-shadow(1px 1px rgba(24, 24, 24, 0.5));
+  font-size: 30px;
+  margin: 0 5px;
   position: relative;
   top: 1px;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-#connectList a:hover,
-#connectList a:focus,
-#connectList a:active {
-  color: #9cbab4;
+#connectSectionText a:hover,
+#connectSectionText a:focus,
+#connectSectionText a:active {
+  color: #2b99d2;
   top: -3px;
 }
 #axelWriting {
-  margin-left: 50%;
+  margin-left: auto;
+  margin-right: 10px;
   max-width: 280px;
 }
 #credits {
