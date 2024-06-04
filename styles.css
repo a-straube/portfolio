@@ -421,11 +421,12 @@ h2:after {
   color: #278abd;
   display: inline-block;
   filter: drop-shadow(1px 1px rgba(24, 24, 24, 0.5));
-  font-size: 30px;
-  margin: 0 5px;
+  font-size: 36px;
+  margin: 0 8px;
   position: relative;
   top: 1px;
   transition: all 0.2s ease-in-out;
+  vertical-align: top;
 }
 #connectSectionText a:hover,
 #connectSectionText a:focus,
