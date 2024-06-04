@@ -95,7 +95,14 @@ h3 {
 #aboutMeSection {
   background-color: #141a21;
   color: #f1ede9;
+  font-size: 16px;
+  line-height: 1.5;
   z-index: 1;
+}
+@media (min-width: 760px) {
+  #aboutMeSection {
+    font-size: 18px;
+  }
 }
 @media (min-width: 1500px) {
   #aboutMeSection p,
@@ -397,8 +404,13 @@ h2:after {
   height: auto;
 }
 #connectSectionText {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
+}
+@media (min-width: 760px) {
+  #connectSectionText {
+    font-size: 18px;
+  }
 }
 @media (max-width: 1000px) {
   #connectSectionText span {

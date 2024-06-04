@@ -91,7 +91,10 @@ h3 {
 #aboutMeSection {
     background-color: #141a21;
     color: @offWhite;
+    font-size: 16px;
+    line-height: 1.5;
     z-index: 1;
+    @media(min-width: @screen-sm) { font-size: 18px; }
     p, ul {
         @media(min-width: 1500px) { padding-right: 34vw; }
         @media(min-width: 1650px) { padding-right: 32vw; }
@@ -310,8 +313,9 @@ h2 {
 }
 
 #connectSectionText {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
+    @media(min-width: @screen-sm) { font-size: 18px; }
     span {
         @media(max-width: @screen-md) { display: block; }
     }
