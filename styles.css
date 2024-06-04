@@ -93,9 +93,8 @@ h3 {
   z-index: 2;
 }
 #aboutMeSection {
-  background-color: #e1d6cc;
-  border-top: 1px solid #181818;
-  border-bottom: 1px solid #181818;
+  background-color: #141a21;
+  color: #f1ede9;
   z-index: 1;
 }
 @media (min-width: 1500px) {
@@ -393,7 +392,8 @@ h2:after {
   transition: all 0.5s ease-in-out;
 }
 #connectSection {
-  background-color: #e1d6cc;
+  background-color: #141a21;
+  color: #f1ede9;
   height: auto;
 }
 #connectSectionText {
@@ -422,6 +422,7 @@ h2:after {
   top: -3px;
 }
 #axelWriting {
+  filter: invert(1);
   margin-left: auto;
   margin-right: 10px;
   max-width: 280px;
