@@ -224,22 +224,12 @@ h2 {
   margin: 0;
   opacity: 0;
   padding: 6vh 3vw 6vh 4vw;
-  position: relative;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 @media (min-width: 760px) {
   h2 {
     font-size: 2vw;
   }
-}
-h2:after {
-  content: '';
-  background-color: rgba(24, 24, 24, 0.5);
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  bottom: 3vh;
-  left: 2vw;
 }
 #axelPic {
   height: auto;
