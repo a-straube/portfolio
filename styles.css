@@ -104,16 +104,10 @@ h3 {
     font-size: 18px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 760px) {
   #aboutMeSection p,
   #aboutMeSection ul {
-    padding-right: 34vw;
-  }
-}
-@media (min-width: 1650px) {
-  #aboutMeSection p,
-  #aboutMeSection ul {
-    padding-right: 32vw;
+    padding-right: 40%;
   }
 }
 video {
@@ -240,29 +234,27 @@ h2 {
 @media (min-width: 760px) {
   #axelPic {
     border: 5px solid #403828;
-    border-radius: 10px;
     filter: drop-shadow(5px 4px 7px rgba(0, 0, 0, 0.75));
     margin: 0;
+    opacity: 75%;
     position: absolute;
     top: 136vh;
-    right: 10vw;
-    transform: translateZ(7px) scale(0.4) rotateY(-0.03deg);
-    height: 30vh;
-    width: auto;
+    right: 5vw;
+    width: 30vw;
   }
 }
 @media (min-width: 1000px) {
   #axelPic {
-    height: 45vh;
-    right: 12vw;
+    right: 17vw;
+    transform: translateZ(7px) scale(0.4);
   }
 }
 @media (min-width: 1400px) {
   #axelPic {
-    right: 14vw;
+    right: 15vw;
   }
 }
-@media (min-width: 1800px) {
+@media (min-width: 1600px) {
   #axelPic {
     right: 20vw;
   }
