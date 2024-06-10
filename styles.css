@@ -234,13 +234,13 @@ h2 {
 @media (min-width: 760px) {
   #axelPic {
     border: 5px solid #403828;
-    filter: drop-shadow(5px 4px 7px rgba(0, 0, 0, 0.75));
+    filter: drop-shadow(5px 4px 7px rgba(0, 0, 0, 0.85));
     margin: 0;
     opacity: 75%;
     position: absolute;
-    top: 136vh;
+    top: 132vh;
     right: 5vw;
-    width: 30vw;
+    width: 33vw;
   }
 }
 @media (min-width: 1000px) {
