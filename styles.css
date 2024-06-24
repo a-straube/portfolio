@@ -372,8 +372,12 @@ h2 {
   padding: 12px 0 6px;
 }
 .project-link--old-portfolio {
-  top: -23vh;
-  left: 100px;
+  top: -25vh;
+  left: -2vw;
+}
+.project-link--mahindra {
+  top: 11vh;
+  right: 3vw;
 }
 .project-link:hover,
 .project-link:focus,
