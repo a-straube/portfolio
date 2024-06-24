@@ -398,6 +398,7 @@ h2 {
   background-color: #141a21;
   color: #f1ede9;
   height: auto;
+  min-height: 66vh;
 }
 #connectSectionText {
   font-size: 16px;
