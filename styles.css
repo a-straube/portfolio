@@ -13,7 +13,7 @@
   }
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #e1d6cc 0%, #dad3c9 30%, #8db0a9 36%, #91b2ab 51%, #e1d6cc 58%);
+  background: linear-gradient(180deg, #e79200 0%, #dad3c9 40%, #44c7d6 100%);
 }
 ::-webkit-scrollbar-thumb {
   background: transparent;
