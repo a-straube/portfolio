@@ -430,6 +430,9 @@ h2 {
   color: #2b99d2;
   top: -3px;
 }
+#connectLinksBlock {
+  display: inline-block;
+}
 #axelWriting {
   filter: invert(1);
   margin-left: auto;
