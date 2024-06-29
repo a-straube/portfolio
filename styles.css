@@ -266,6 +266,11 @@ h2 {
 #projectsSection {
   background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg');
 }
+@media (max-width: 760px) {
+  #projectsSection {
+    height: auto;
+  }
+}
 #projects-Demos {
   top: 34vh;
   left: 48vw;
