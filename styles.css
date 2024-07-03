@@ -9,11 +9,11 @@
 }
 @media (min-width: 400px) {
   ::-webkit-scrollbar {
-    width: 22px;
+    width: 18px;
   }
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #e79200 0%, #dad3c9 35%, #44c7d6 70%, #dad3c9 100%);
+  background: linear-gradient(180deg, #e79200 0%, #dad3c9 35%, #44c7d6 60%, #dad3c9 75%, #dad3c9 100%);
 }
 ::-webkit-scrollbar-thumb {
   background: transparent;
