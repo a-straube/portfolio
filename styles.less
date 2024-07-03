@@ -97,13 +97,14 @@ h3 {
     z-index: 1;
     @media(max-width: @screen-sm) { height: auto; }
     @media(min-width: @screen-sm) { font-size: 18px; }
-    p, >ul {
+    p {
         @media(min-width: @screen-sm) { padding-right: 40%; }
     }
 }
 
 .language-list {
     padding-left: 0;
+    @media(min-width: @screen-md) { padding-right: 40%; }
     >li {
         display: inline-block;
         padding: 0 25px 20px 0;
