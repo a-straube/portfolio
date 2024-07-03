@@ -101,8 +101,18 @@ h3 {
     }
 }
 
-.language-list >li {
-    display: inline-block;
+.language-list {
+    padding-left: 0;
+    >li {
+        display: inline-block;
+        padding: 0 25px 20px 0;
+        h4 { margin: 0; }
+        i { width: 20px; }
+        img {
+            filter: invert(100%) sepia(100%) saturate(2%) brightness(165%) contrast(100%); // Make img white
+            max-width: 20px;
+        }
+    }   
 }
 
 video {
