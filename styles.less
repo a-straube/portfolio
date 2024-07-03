@@ -96,9 +96,13 @@ h3 {
     z-index: 1;
     @media(max-width: @screen-sm) { height: auto; }
     @media(min-width: @screen-sm) { font-size: 18px; }
-    p, ul {
+    p, >ul {
         @media(min-width: @screen-sm) { padding-right: 40%; }
     }
+}
+
+.language-list >li {
+    display: inline-block;
 }
 
 video {

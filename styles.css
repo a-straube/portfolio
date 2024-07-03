@@ -110,9 +110,12 @@ h3 {
 }
 @media (min-width: 760px) {
   #aboutMeSection p,
-  #aboutMeSection ul {
+  #aboutMeSection > ul {
     padding-right: 40%;
   }
+}
+.language-list > li {
+  display: inline-block;
 }
 video {
   object-fit: cover;
