@@ -9,11 +9,11 @@
 }
 @media (min-width: 400px) {
   ::-webkit-scrollbar {
-    width: 18px;
+    width: 14px;
   }
 }
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #e79200 0%, #dad3c9 35%, #44c7d6 60%, #dad3c9 75%, #dad3c9 100%);
+  background: linear-gradient(180deg, #dad3c9 0%, #e79200 18%, #dad3c9 35%, #44c7d6 60%, #dad3c9 75%, #dad3c9 100%);
 }
 ::-webkit-scrollbar-thumb {
   background: transparent;
@@ -76,6 +76,7 @@ h3 {
 }
 #intro {
   align-items: center;
+  border-right: 10px solid #141a21;
   flex-direction: row;
   justify-content: center;
   padding: 0;
@@ -293,6 +294,7 @@ h2 {
 }
 #projectsSection {
   background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg');
+  border-right: 10px solid #141a21;
 }
 @media (max-width: 760px) {
   #projectsSection {
@@ -479,6 +481,7 @@ h2 {
 }
 #credits {
   background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg');
+  border-right: 10px solid #141a21;
   color: #181818;
   font-weight: 700;
   height: auto;
