@@ -296,6 +296,7 @@ h2 {
 #projectsSection {
   background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg');
   border-right: 10px solid #141a21;
+  z-index: 1;
 }
 @media (max-width: 760px) {
   #projectsSection {
