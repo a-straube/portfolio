@@ -293,10 +293,14 @@ h2 {
     right: 20vw;
   }
 }
-#projectsSection {
+#projectSectionBG {
   background-image: url('img/pexels-zaksheuskaya-709412-1568607.jpg');
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+#projectsSection {
   border-right: 10px solid #141a21;
-  z-index: 1;
 }
 @media (max-width: 760px) {
   #projectsSection {
